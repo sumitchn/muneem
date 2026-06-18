@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gmail Bank Statement Downloader</title>
+  </head>
+  <body>
+    <h1>Gmail Bank Statement Downloader</h1>
+    <div id="auth">
+      <button id="signin">Sign in with Google</button>
+      <span id="status"></span>
+    </div>
+
+    <div id="app" style="display:none; margin-top:16px;">
+      <label>Enter bank sender emails (comma separated):</label><br />
+      <input id="senders" style="width:400px" placeholder="bank1@example.com, bank2@something.com" />
+      <button id="download">Download statements</button>
+      <pre id="result" style="white-space:pre-wrap; background:#f4f4f4; padding:8px; margin-top:8px;"></pre>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
